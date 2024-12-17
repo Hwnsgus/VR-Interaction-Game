@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Disk1
+  - Disk2
+  - Disk3
+  - Disk4
+  - Disk5
+  - Target
   layers:
   - Default
   - TransparentFX
