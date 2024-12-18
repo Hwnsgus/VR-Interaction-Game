@@ -15,32 +15,37 @@ public class TargetChecker : MonoBehaviour
     {
         if (other.CompareTag(correctOrderTags[currentIndex]))
         {
-            UpdateDebugText($"원판 {correctOrderTags[currentIndex]} 이(가) 올바른 위치에 들어갔습니다.");
+            UpdateDebugText($"Disk{correctOrderTags[currentIndex]} has been placed correctly.");
             currentIndex++;
 
             if (currentIndex >= correctOrderTags.Count)
             {
-                UpdateDebugText("클리어! 모든 원판이 올바른 순서로 들어갔습니다.");
+                UpdateDebugText("Clear!!!");
                 ClearLevel();
             }
         }
         else
         {
-            UpdateDebugText("잘못된 원판입니다. 순서를 다시 확인하세요!");
+            UpdateDebugText("Wrong disk. Please check the order again!");
         }
     }
 
     void UpdateDebugText(string message)
     {
-        // UI 텍스트에 메시지 표시
+        Debug.Log($"UI 업데이트 시도: {message}"); // 디버그 메시지 추가
         if (debugText != null)
         {
             debugText.text = message;
         }
+        else
+        {
+            Debug.LogError("DebugText가 연결되지 않았습니다!");
+        }
     }
+
 
     void ClearLevel()
     {
-        UpdateDebugText("게임 클리어!");
+        UpdateDebugText("Level Cleared!");
     }
 }
