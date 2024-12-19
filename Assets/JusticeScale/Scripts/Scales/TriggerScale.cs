@@ -11,9 +11,8 @@ namespace JusticeScale.Scripts.Scales
 
         // Container for objects detected by the scale
         private GameObject _objectContainer;
-        
-        // HashSet to track objects on the scale, ensuring each is only counted once 
-        // (useful if the GameObject has multiple triggers that could detect the same object).
+
+        // HashSet to track objects on the scale, ensuring each is only counted once
         private HashSet<Transform> _detectedObjects = new HashSet<Transform>();
 
         private void Start()
@@ -28,9 +27,11 @@ namespace JusticeScale.Scripts.Scales
             var rb = other.GetComponent<Rigidbody>();
             if (rb != null && IsInDetectableLayer(other.gameObject) && _detectedObjects.Add(rb.transform))
             {
+                // 태그 기반으로 무게 설정
+                float weightToAdd = GetWeightBasedOnTag(other.tag);
+                weight += weightToAdd;
+
                 AddObjectToContainer(rb.transform);
-                weight += rb.mass;
-                // Round the total weight to 2 decimal places
                 weight = Mathf.Round(weight * 100f) / 100f;
             }
         }
@@ -38,14 +39,32 @@ namespace JusticeScale.Scripts.Scales
         private void OnTriggerExit(Collider other)
         {
             var rb = other.GetComponent<Rigidbody>();
-            if (rb != null && _detectedObjects.Remove(rb.transform)) 
+            if (rb != null && _detectedObjects.Remove(rb.transform))
             {
-                weight -= rb.mass;
+                // 태그 기반으로 무게 제거
+                float weightToRemove = GetWeightBasedOnTag(other.tag);
+                weight -= weightToRemove;
+
                 // Ensure total weight doesn't drop below zero
                 weight = Mathf.Max(0, weight);
                 weight = Mathf.Round(weight * 100f) / 100f;
 
                 RemoveObjectFromContainer(rb.transform);
+            }
+        }
+
+        private float GetWeightBasedOnTag(string tag)
+        {
+            // 태그에 따라 무게를 설정
+            switch (tag)
+            {
+                case "Car1": return 1.0f; // 가장 가벼운 무게
+                case "Car2": return 2.0f;
+                case "Car3": return 3.0f;
+                case "Car4": return 4.0f;
+                case "Car5": return 9.0f;
+                case "Car6": return 15.0f; // 가장 무거운 무게
+                default: return 0.0f; // 무게가 없는 태그
             }
         }
 
@@ -70,7 +89,7 @@ namespace JusticeScale.Scripts.Scales
             // Destroy the container if it has no child objects left
             if (_objectContainer.transform.childCount == 0) Destroy(_objectContainer);
         }
-        
+
         private bool IsInDetectableLayer(GameObject obj)
         {
             // Check if the object is in the correct layer 

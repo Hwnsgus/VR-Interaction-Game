@@ -22,6 +22,7 @@ public class TargetChecker : MonoBehaviour
             {
                 UpdateDebugText("Clear!!!");
                 ClearLevel();
+                FindObjectOfType<GameManager>().CompleteGame1();
             }
         }
         else
