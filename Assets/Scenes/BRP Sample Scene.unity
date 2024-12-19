@@ -3480,7 +3480,6 @@ GameObject:
   - component: {fileID: 847061189}
   - component: {fileID: 847061188}
   - component: {fileID: 847061192}
-  - component: {fileID: 847061193}
   m_Layer: 5
   m_Name: CarName Canvas
   m_TagString: Untagged
@@ -3569,7 +3568,6 @@ RectTransform:
   - {fileID: 782913773}
   - {fileID: 957148332}
   - {fileID: 1819740878}
-  - {fileID: 1373316056}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -89.25, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3596,19 +3594,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &847061193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847061187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a612b329e72e4a54583be29acd25133c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resultText: {fileID: 1373316054}
 --- !u!1001 &901446318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5716,6 +5701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297395716}
+  - component: {fileID: 1297395717}
   m_Layer: 0
   m_Name: CarGameObject
   m_TagString: Untagged
@@ -5738,6 +5724,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1297395717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297395714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a612b329e72e4a54583be29acd25133c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultText: {fileID: 1373316054}
 --- !u!1 &1301693637 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1088083314195414, guid: 62b8dae48bd74e44c9d44fbb59e6c12e, type: 3}
@@ -6248,16 +6247,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373316053}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.70246166, z: -0, w: 0.7117216}
+  m_LocalPosition: {x: 0, y: 0, z: -31.519428}
+  m_LocalScale: {x: 0.04256239, y: 0.042562388, z: 0.04256239}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 847061191}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: -96}
+  m_AnchoredPosition: {x: 102.743645, y: 2487.5962}
   m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1383251965
@@ -10178,6 +10177,7 @@ SceneRoots:
   - {fileID: 1199684011}
   - {fileID: 1589746549}
   - {fileID: 847061191}
+  - {fileID: 1373316056}
   - {fileID: 1297395716}
   - {fileID: 423186635}
   - {fileID: 27174059}
