@@ -795,7 +795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297395715}
+      - m_Target: {fileID: 2055695932}
         m_TargetAssemblyTypeName: CarGameManager, Assembly-CSharp
         m_MethodName: OnCarButtonClicked
         m_Mode: 5
@@ -3341,7 +3341,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297395715}
+      - m_Target: {fileID: 1411322522}
         m_TargetAssemblyTypeName: CarGameManager, Assembly-CSharp
         m_MethodName: OnCarButtonClicked
         m_Mode: 5
@@ -3479,6 +3479,8 @@ GameObject:
   - component: {fileID: 847061190}
   - component: {fileID: 847061189}
   - component: {fileID: 847061188}
+  - component: {fileID: 847061192}
+  - component: {fileID: 847061193}
   m_Layer: 5
   m_Name: CarName Canvas
   m_TagString: Untagged
@@ -3575,6 +3577,38 @@ RectTransform:
   m_AnchoredPosition: {x: -71.2, y: 18.05}
   m_SizeDelta: {x: 30, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &847061192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847061187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
+--- !u!114 &847061193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847061187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a612b329e72e4a54583be29acd25133c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultText: {fileID: 1373316054}
 --- !u!1001 &901446318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3803,7 +3837,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297395715}
+      - m_Target: {fileID: 1301693642}
         m_TargetAssemblyTypeName: CarGameManager, Assembly-CSharp
         m_MethodName: OnCarButtonClicked
         m_Mode: 5
@@ -5682,7 +5716,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297395716}
-  - component: {fileID: 1297395715}
   m_Layer: 0
   m_Name: CarGameObject
   m_TagString: Untagged
@@ -5690,19 +5723,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1297395715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297395714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a612b329e72e4a54583be29acd25133c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resultText: {fileID: 1373316054}
 --- !u!4 &1297395716
 Transform:
   m_ObjectHideFlags: 0
@@ -7913,8 +7933,8 @@ PrefabInstance:
 --- !u!1 &1775537669
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5962468462833087477, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -7932,8 +7952,8 @@ GameObject:
 --- !u!224 &1775537670
 RectTransform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775537669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -7952,8 +7972,8 @@ RectTransform:
 --- !u!114 &1775537671
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5895701585877435270, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775537669}
   m_Enabled: 1
@@ -7993,7 +8013,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297395715}
+      - m_Target: {fileID: 1274920816}
         m_TargetAssemblyTypeName: CarGameManager, Assembly-CSharp
         m_MethodName: OnCarButtonClicked
         m_Mode: 5
@@ -8008,8 +8028,8 @@ MonoBehaviour:
 --- !u!114 &1775537672
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8364048050329340484, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775537669}
   m_Enabled: 1
@@ -8038,8 +8058,8 @@ MonoBehaviour:
 --- !u!222 &1775537673
 CanvasRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3521742202625629482, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775537669}
   m_CullTransparentMesh: 1
@@ -8126,8 +8146,8 @@ PrefabInstance:
 --- !u!1 &1801996169
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7753529575272323788, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -8144,8 +8164,8 @@ GameObject:
 --- !u!224 &1801996170
 RectTransform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5039765205722173003, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801996169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8163,8 +8183,8 @@ RectTransform:
 --- !u!114 &1801996171
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7721754179786565243, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801996169}
   m_Enabled: 1
@@ -8252,8 +8272,8 @@ MonoBehaviour:
 --- !u!222 &1801996172
 CanvasRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 954771980046082704, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+  m_PrefabInstance: {fileID: 4894896340702198594}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801996169}
   m_CullTransparentMesh: 1
@@ -8340,7 +8360,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297395715}
+      - m_Target: {fileID: 583416705}
         m_TargetAssemblyTypeName: CarGameManager, Assembly-CSharp
         m_MethodName: OnCarButtonClicked
         m_Mode: 5
@@ -9062,7 +9082,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297395715}
+      - m_Target: {fileID: 1698487289}
         m_TargetAssemblyTypeName: CarGameManager, Assembly-CSharp
         m_MethodName: OnCarButtonClicked
         m_Mode: 5
@@ -10032,6 +10052,111 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0291aaffe4788f44093f251e3e5f74f8, type: 3}
+--- !u!1001 &4894896340702198594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 847061191}
+    m_Modifications:
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -179.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984485512184050470, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895701585877435270, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1274920816}
+    - target: {fileID: 5895701585877435270, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnCarButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962468462833087477, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
+      propertyPath: m_Name
+      value: Car1Button
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3add081214ac2c2408c25b360f7a9ad1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
