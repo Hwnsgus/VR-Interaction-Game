@@ -13,6 +13,7 @@ public class TargetChecker : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+   
         if (other.CompareTag(correctOrderTags[currentIndex]))
         {
             UpdateDebugText($"Disk{correctOrderTags[currentIndex]} has been placed correctly.");
